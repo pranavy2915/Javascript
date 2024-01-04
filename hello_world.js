@@ -22,3 +22,17 @@ for(const key in myobj)
 {
     console.log(`${key} : ${myobj[key]}`);
 }
+
+
+
+//map
+const map = new Map()
+map.set('1','Delhi')
+map.set('2','Kolkata')
+map.set('3','Mumbai')
+map.set('4','Chennai')
+
+for(const [key,value] of map)
+{
+    console.log(key+" : "+value);
+}
