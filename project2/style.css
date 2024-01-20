@@ -1,0 +1,45 @@
+body{
+    font-size: larger;
+    background-color: grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    margin: 35px;
+}
+
+.label {
+    margin: 35px 25px;
+}
+
+button{
+    margin: 16px 107px;
+    border: solid 2px;
+    border-radius: 5px;
+    padding: 5px 30px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button:hover{
+    color: red;
+    cursor:pointer;
+}
+
+
+#weight-guide{
+    margin: auto 91px;
+}
+
+
+#results {
+    margin: auto 57px;
+    color: #a40000;
+    font-weight: bold;
+}
+
+#comments{
+    border: 62px;
+    color: rgb(9, 95, 9);
+    padding: 14px 58px;
+}

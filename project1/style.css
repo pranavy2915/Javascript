@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+span{
+    display: block;
+    align-items: center;
+}
+
+
+.canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+}
+
+#grey{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: grey;
+    display: inline-block;
+}
+
+#blue{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: blue;
+    display: inline-block;
+}
+
+#yellow{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: yellow;
+    display: inline-block;
+}
+
+#red{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: red;
+    display: inline-block;
+}
+
+#white{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: white;
+    display: inline-block;
+}
