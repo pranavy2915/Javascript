@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous coding</title>
+</head>
+
+<body>
+    <h1>Random color generator </h1>
+    <h2>Start should change the background color every second</h2>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    function fun(x) {
+        document.body.style.backgroundColor = `${getRandomColor()}`
+
+    }
+
+    var loop
+    document.querySelector('#start').addEventListener('click', () => {
+        console.log('started')
+        if(!loop)
+            loop = setInterval(fun, 1000, "Hello world")
+    })
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearInterval(loop);
+        loop = null;
+        console.log("stopped")
+    })
+
+
+
+
+
+</script>
+
+</html>

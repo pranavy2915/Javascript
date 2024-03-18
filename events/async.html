@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is async coding</title>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "We are learning Javascript";
+        console.log("Message after 2 seconds")
+    }
+
+    const changeMe = setTimeout(changeText,2000);
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(changeMe);
+        console.log("Timer stopped");
+    })
+
+
+</script>
+</html>
