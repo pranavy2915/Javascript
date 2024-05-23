@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pranav Yadav</h1>
+</body>
+<script>
+    let data
+    const reqUrl = 'https://api.github.com/users/pranavy2915'
+    const xhr =   new XMLHttpRequest()
+    xhr.open('GET',reqUrl)
+    xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+        if(xhr.readyState == 4)
+        {
+            data = JSON.parse(this.responseText)
+           console.log(data.name);
+        }
+    }
+    xhr.send()
+
+</script>
+</html>
